@@ -1,0 +1,26 @@
+executor: CeleryExecutor
+
+dags:
+  gitSync:
+    enabled: true
+    repo: "https://github.com/AkashYella30/dev-airflow.git"
+    branch: main
+    subPath: dags
+    depth: 1
+    credentialsSecret: airflow-git-secret
+
+webserver:
+  defaultUser:
+    enabled: true
+    username: admin
+    password: admin
+
+postgresql:
+  enabled: true
+
+redis:
+  enabled: true
+
+serviceAccount:
+  create: true
+  name: airflow-sa
