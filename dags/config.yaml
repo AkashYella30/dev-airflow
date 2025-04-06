@@ -1,0 +1,18 @@
+test:
+  project_id: "dev-ps-452912"
+  gcp_conn_id: "google_cloud_default"
+  subscription: "test-bucket1001-subscription"
+  pubsub_max_messages: 10
+  pubsub_poke_interval: 20
+  region: "us-central1"
+  job_name: "python-cloud-run-job "
+
+dev:
+  project_id: "dev-ps-452912"
+  gcp_conn_id: "google_cloud_default"
+  subscription: "test-bucket1001-subscription"
+  pubsub_max_messages: 10
+  pubsub_poke_interval: 5
+  region: "us-central1"
+  job_name: "python-cloud-run-job"
+        
